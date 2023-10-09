@@ -1,9 +1,9 @@
 public class AccountManger {
 
-    private static AccountManger INSTANCE = null; 
+    private static AccountManger instance; 
     public static void main(String[] args) {
-        if(INSTANCE == null) {
-            INSTANCE = new AccountManger();
+        if(instance == null) {
+            instance = new AccountManger();
         }
     }
      
