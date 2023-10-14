@@ -18,10 +18,10 @@ public class AccountManger {
                 newAccount = new BankAccount();
             break;
             case CREDIT:
-                newAccount = new 
+                newAccount = new CreditAccount();
             break;
-            case LOAN;
-
+            case LOAN:
+                newAccount = new LoanAccount();
             break;
         }
     }
@@ -31,10 +31,6 @@ public class AccountManger {
             instance = new AccountManger();
         }
         return instance;   
-    }
-
-    public void openAccount(String accountNum, String name) {
-        accountsMap.put(accountNum, name);
     }
 
     public String getAccount(String acctNum) {

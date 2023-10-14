@@ -1,5 +1,17 @@
 public abstract class Account {
 
-    String name;
-    double balence;
+    public static int AcctNum;
+    public static double currentBalence;
+
+    public Account(int AcctNum, double currentBalence) {
+
+    }
+
+    public static int getAcctNum() {
+        return AcctNum;
+    }
+    public static double getBalance() {
+        return currentBalence;
+    }
+
 }
